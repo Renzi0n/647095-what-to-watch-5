@@ -1,7 +1,7 @@
 # Личный проект «Что посмотреть» [![Build status][travis-image]][travis-url]
 
 * Студент: [Андрей Решетов](https://up.htmlacademy.ru/react/5/user/647095).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Балесный](https://up.htmlacademy.ru/react/5/user/221665).
 
 ---
 
