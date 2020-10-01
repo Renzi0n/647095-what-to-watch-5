@@ -40,5 +40,5 @@ npm i react@16.12 -E
 * redux-devtools-extension@2.13
 * redux-mock-store@1.5
 * webpack@4.41
-* webpack-cli@3.3
+* webpack-cli@3.3 
 * webpack-dev-server@3.10
