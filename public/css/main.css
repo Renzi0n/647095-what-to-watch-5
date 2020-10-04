@@ -1028,6 +1028,7 @@ main {
 
 .player__toggler {
   display: block;
+  left: 30%;
   width: 17px;
   height: 17px;
   border-radius: 50%;
