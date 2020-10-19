@@ -2,14 +2,14 @@ import reviews from './reviews';
 
 export default [
   {
-    title: `Мулан`,
+    title: `Mulan`,
     previewSrc: `https://kinohod.ru/o/88/d3/88d3054f-8fd3-4daf-8977-bb4bc8b95206.jpg`,
     genre: `Фэнтези`,
     year: `2020`,
     posterSrc: `https://st.kp.yandex.net/im/poster/3/4/7/kinopoisk.ru-Mulan-3477206.jpg`,
     videoSrc: `https://www.youtube.com/watch?v=rVn2NCgCVLU`,
     overview: {
-      rate: 5.9,
+      rate: 10,
       votes: 230,
       text: `История о бесстрашной молодой девушке, которая выдаёт себя за мужчину,
         чтобы вступить в ряды армии,
@@ -22,11 +22,11 @@ export default [
       runTime: `2h 0m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
   {
     title: `Bohemian Rhapsody`,
-    previewSrc: `../markup/img/bohemian-rhapsody.jpg`,
+    previewSrc: `./img/bohemian-rhapsody.jpg`,
     genre: `Фэнтези`,
     year: `2019`,
     posterSrc: `https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/trailers_frame/bohemian_rhapsody.jpg `,
@@ -44,10 +44,10 @@ export default [
       runTime: `2h 22m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
   {
-    title: `Мулан`,
+    title: `Snatch`,
     previewSrc: `https://kinohod.ru/o/88/d3/88d3054f-8fd3-4daf-8977-bb4bc8b95206.jpg`,
     genre: `Фэнтези`,
     year: `2020`,
@@ -66,11 +66,11 @@ export default [
       runTime: `2h 0m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
   {
     title: `The Grand Budapest Hotel`,
-    previewSrc: `../markup/img/the-grand-budapest-hotel-poster.jpg`,
+    previewSrc: `./img/the-grand-budapest-hotel-poster.jpg`,
     genre: `Drama`,
     year: `2016`,
     posterSrc: `https://st.kp.yandex.net/im/poster/3/4/7/kinopoisk.ru-Mulan-3477206.jpg`,
@@ -90,11 +90,11 @@ export default [
       runTime: `34h 0m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
   {
     title: `Revenant`,
-    previewSrc: `../markup/img/revenant.jpg`,
+    previewSrc: `./img/revenant.jpg`,
     genre: `Фэнтези`,
     year: `2017`,
     posterSrc: `https://st.kp.yandex.net/im/poster/3/4/7/kinopoisk.ru-Mulan-3477206.jpg`,
@@ -113,11 +113,11 @@ export default [
       runTime: `2h 0m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
   {
     title: `Aviator`,
-    previewSrc: `../markup/img/aviator.jpg`,
+    previewSrc: `./img/aviator.jpg`,
     genre: `Боевик`,
     year: `2020`,
     posterSrc: `https://st.kp.yandex.net/im/poster/3/4/7/kinopoisk.ru-Mulan-3477206.jpg`,
@@ -135,11 +135,11 @@ export default [
       runTime: `2h 0m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
   {
     title: `Mindhunter`,
-    previewSrc: `../markup/img/mindhunter.jpg`,
+    previewSrc: `./img/mindhunter.jpg`,
     genre: `Фэнтези`,
     year: `2020`,
     posterSrc: `https://st.kp.yandex.net/im/poster/3/4/7/kinopoisk.ru-Mulan-3477206.jpg`,
@@ -158,11 +158,11 @@ export default [
       runTime: `2h 0m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
   {
     title: `Midnight Special`,
-    previewSrc: `../markup/img/midnight-special.jpg`,
+    previewSrc: `./img/midnight-special.jpg`,
     genre: `Фэнтези`,
     year: `2020`,
     posterSrc: `https://st.kp.yandex.net/im/poster/3/4/7/kinopoisk.ru-Mulan-3477206.jpg`,
@@ -182,6 +182,6 @@ export default [
       runTime: `2h 0m`,
       fullStarring: `Лю Ифэй, Донни Йен, Гун Ли, Джет Ли, Джейсон Скотт Ли, Йосон Ань, Ма Ци, Розалинд Чао, Чжэн Пэйпэй, Сюзанна Тан`
     },
-    reviews: Object.assign({}, reviews),
+    reviews: reviews.slice(),
   },
 ];
