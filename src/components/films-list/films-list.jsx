@@ -11,11 +11,16 @@ class FilmsList extends PureComponent {
       activeFilm: {}
     };
 
-    this.onMouseOver = this.onMouseOver.bind(this);
+    this.onMouseEnter = this.onMouseEnter.bind(this);
+    this.onMouseLeave = this.onMouseLeave.bind(this);
   }
 
-  onMouseOver(activeFilm) {
+  onMouseEnter(activeFilm) {
     this.setState({activeFilm});
+  }
+
+  onMouseLeave() {
+    this.setState({});
   }
 
   render() {
@@ -26,7 +31,8 @@ class FilmsList extends PureComponent {
         <FilmCard
           key={film.title}
           film={film}
-          onMouseOver={this.onMouseOver}
+          onMouseEnter={this.onMouseEnter}
+          onMouseLeave={this.onMouseLeave}
         />
       ))
     );

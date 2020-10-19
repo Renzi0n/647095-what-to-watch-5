@@ -10,7 +10,7 @@ import SignIn from '../sign-in/sign-in';
 import filmTypes from '../../prop-types/film-types';
 
 const App = (props) => {
-  const {title, genre, year, films} = props;
+  const {films} = props;
   const [film] = films;
 
   return (
@@ -18,9 +18,7 @@ const App = (props) => {
       <Switch>
         <Route exact path='/'>
           <Main
-            title={title}
-            genre={genre}
-            year={year}
+            film={film}
             films={films}
           />
         </Route>

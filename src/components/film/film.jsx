@@ -4,18 +4,45 @@ import PropTypes from 'prop-types';
 import filmTypes from '../../prop-types/film-types';
 import FilmsList from '../films-list/films-list';
 
+const MAX_FILMS = 4;
+const FILM_RATES = {
+  bad: {
+    name: `Bad`,
+    max: 3
+  },
+  normal: {
+    name: `Normal`,
+    min: 3,
+    max: 5
+  },
+  good: {
+    name: `Good`,
+    min: 5,
+    max: 8
+  },
+  veryGood: {
+    name: `Very good`,
+    min: 8,
+    max: 10
+  },
+  awesome: {
+    name: `Awesome`,
+    max: 10
+  },
+};
+
 const getTextRateOfFilm = (rate) => {
   switch (true) {
-    case rate < 3:
-      return `Bad`;
-    case rate >= 3 && rate < 5:
-      return `Normal`;
-    case rate >= 5 && rate < 8:
-      return `Good`;
-    case rate >= 8 && rate < 10:
-      return `Very good`;
-    case rate === 10:
-      return `Awesome`;
+    case rate < FILM_RATES.bad.max:
+      return FILM_RATES.bad.name;
+    case rate >= FILM_RATES.normal.min && rate < FILM_RATES.normal.max:
+      return FILM_RATES.normal.name;
+    case rate >= FILM_RATES.good.min && rate < FILM_RATES.good.max:
+      return FILM_RATES.good.name;
+    case rate >= FILM_RATES.veryGood.min && rate < FILM_RATES.veryGood.max:
+      return FILM_RATES.veryGood.name;
+    case rate === FILM_RATES.awesome.max:
+      return FILM_RATES.awesome.name;
   }
 
   throw new Error(`Invalid value`);
@@ -142,7 +169,7 @@ const Film = (props) => {
 
           <div className="catalog__movies-list">
 
-            <FilmsList films={likeThis.slice(0, 4)}/>
+            <FilmsList films={likeThis.slice(0, MAX_FILMS)}/>
 
           </div>
         </section>

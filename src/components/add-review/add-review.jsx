@@ -8,7 +8,7 @@ class AddReview extends PureComponent {
     super(props);
 
     this.state = {
-      rate: [true, true, true, false, false],
+      rate: 2,
       text: ``
     };
   }
@@ -68,19 +68,17 @@ class AddReview extends PureComponent {
           <form action="#" className="add-review__form">
             <div className="rating">
               <div className="rating__stars">
-                {rate.map((isChecked, i) => (
+                {new Array(5).fill().map((it, i) => (
                   <React.Fragment key={`star-${i}`}>
                     <input
                       className="rating__input"
                       id={`star-${i}`}
                       type="radio" name="rating"
                       value={i}
-                      checked={isChecked}
-                      onChange={(evt) => {
-                        const value = evt.target.checked;
-
+                      checked={i === rate ? true : false}
+                      onChange={() => {
                         this.setState({
-                          rate: [...rate.slice(0, i), value, ...rate.slice(i + 1)]
+                          rate: i
                         });
                       }}
                     />
@@ -100,9 +98,8 @@ class AddReview extends PureComponent {
                     text: value
                   });
                 }}
-              >
-                {text}
-              </textarea>
+                value={text}
+              />
               <div className="add-review__submit">
                 <button className="add-review__btn" type="submit">Post</button>
               </div>

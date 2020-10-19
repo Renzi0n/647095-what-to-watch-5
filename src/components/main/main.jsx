@@ -4,9 +4,8 @@ import filmTypes from '../../prop-types/film-types';
 import FilmsList from '../films-list/films-list';
 
 const Main = (props) => {
-  const {films} = props;
-  const [mainFilm] = films;
-  const {title, genre, year, posterSrc, previewSrc} = mainFilm;
+  const {film, films} = props;
+  const {title, genre, year, posterSrc, previewSrc} = film;
 
   return (
     <React.Fragment>
@@ -132,9 +131,7 @@ const Main = (props) => {
 };
 
 Main.propTypes = {
-  title: PropTypes.string.isRequired,
-  genre: PropTypes.string.isRequired,
-  year: PropTypes.number.isRequired,
+  film: PropTypes.shape(filmTypes).isRequired,
   films: PropTypes.arrayOf(PropTypes.shape(filmTypes).isRequired).isRequired,
 };
 
